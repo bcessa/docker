@@ -11,7 +11,7 @@ RUN \
   cd /opt && \
   git clone https://github.com/neoneggplant/EggShell
 
-ADD start.sh /start.sh
+COPY start.sh /start.sh
 
 RUN \
   apt remove -y git-core && \
